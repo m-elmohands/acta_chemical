@@ -1,0 +1,238 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/home
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"success":true,"data":{"setting":{"id":1,"title":"Acta Chemical","description":"Acta Chemical supplies high-quality industrial and laboratory chemicals with reliable documentation, safe handling, and responsive support.","watts":"+201001234567","email":"info@actachemical.com","phone":"+20212345678","logo":null,"logo_url":null,"lat":"30.0444","lng":"31.2357","map":"https:\/\/www.google.com\/maps?q=30.0444,31.2357","address":"Cairo, Egypt"},"content":{"about_badge":"Who We Are","about_description":"ACTA Chemical delivers dependable industrial and laboratory chemical solutions, combining verified quality, safe handling, and responsive technical support.","about_image":"ACTA Chemical laboratories and industrial operations","about_image_url":null,"about_title":"About ACTA Chemical","article_detail_cta_description":"Additional technical details and research data are available for registered industrial partners. Contact our research team to learn more.","articles_badge":"Scientific Insights","articles_description":"Explore our latest research, industrial breakthroughs, and comprehensive guides on chemical innovation and safety.","articles_empty_description":"Our research library is currently being updated. Please check back later for the latest scientific insights.","articles_empty_title":"Library is empty","articles_read_more":"Read Full Article","articles_title":"Scientific Insights","articles_view_all":"View All Articles","contact_badge":"Scientific Consultation & Support","contact_description":"Have a scientific inquiry or need custom industrial chemical formulations? Our team of experts is here to assist you.","contact_email_description":"We respond to email inquiries within 24 hours.","contact_email_title":"Email Support","contact_form_description":"Complete the form below and our team will contact you.","contact_form_title":"Send Us a Direct Inquiry","contact_location_description":"Visit our headquarters or contact us for directions.","contact_location_title":"Our Location","contact_phone_description":"Sunday\u2013Thursday, 9:00 AM\u20135:00 PM","contact_phone_title":"Call Direct","contact_title":"Get in Touch","event_detail_category":"Industrial Event","events_badge":"Summits & Workshops","events_card_badge":"Industrial Event","events_card_location":"Location","events_description":"Discover the world of advanced chemistry through our specialized summits and workshops. Engage with us to expand your professional horizons.","events_discover_more":"Discover More","events_empty_description":"No upcoming events are scheduled at the moment. Please check back later for our latest summits and workshops.","events_empty_title":"No upcoming events","events_title":"Scientific Summits & Industrial Workshops","events_view_all":"View All Events","footer_email_label":"Email Inquiry","footer_location_title":"Headquarters","footer_phone_label":"Direct Line","footer_quality_badge":"ISO Certified Quality","hero_badge":"Shaping the Future of Chemistry","hero_explore_articles":"Explore Our Articles","hero_highlight_1":"Precision Chemical Synthesis & Industrial Solutions","hero_highlight_2":"Sustainable & High-Performance Molecular Catalysts","hero_highlight_3":"Global Quality Standards & ISO 9001 Compliance","hero_image":"Scientist conducting chemical research in an ACTA laboratory","hero_image_url":null,"hero_purity_label":"Chemical Purity","hero_purity_value":"99.8% Certified Grade","hero_standard_label":"Global Standards","hero_standard_value":"ISO 9001 Compliant","hero_upcoming_events":"Upcoming Events","mission_description":"To provide precise, safe, and dependable chemical solutions that help our partners operate with confidence and efficiency.","mission_title":"Our Mission","privacy_back":"Back to Home","privacy_callout_button":"Contact Compliance","privacy_callout_description":"If you have questions about how we handle your industrial chemical data, please contact our compliance department.","privacy_callout_title":"Contact Compliance Team","privacy_intro":"ACTA Chemical is committed to protecting your privacy and ensuring the confidentiality of your industrial data and scientific partnerships.","privacy_section_1_content":"We collect the information needed to provide our chemical services and improve your experience on our platform.","privacy_section_1_title":"Data Collection","privacy_section_2_content":"ACTA Chemical applies industry-standard security measures to protect your industrial data from unauthorized access.","privacy_section_2_title":"Information Security","privacy_section_3_content":"You have the right to access, correct, or request deletion of your personal and corporate information stored in our systems.","privacy_section_3_title":"Your Rights","privacy_subtitle":"ACTA Chemical Data Compliance & Safety Protocol Standards","privacy_title":"Privacy Policy","stat_1_icon":"award","stat_1_label":"Years of Industrial Excellence","stat_1_value":"15+","stat_2_icon":"flask-conical","stat_2_label":"Precision Chemical Solutions","stat_2_value":"250+","stat_3_icon":"globe-2","stat_3_label":"Global Enterprise Partners","stat_3_value":"40+","terms_back":"Back to Home","terms_intro":"Please read these terms of service carefully before using our industrial chemical solutions, technical documentation, and digital platforms.","terms_notice_description":"These terms are governed by industrial and laboratory regulations. Compliance with chemical safety protocols is mandatory for all clients and partners.","terms_notice_title":"Important Safety Notice","terms_section_1_content":"By accessing our services, you agree to comply with all industrial chemical standards and safety regulations specified by ACTA Chemical.","terms_section_1_title":"Service & Quality Terms","terms_section_2_content":"ACTA Chemical maintains strict laboratory quality control, and users are responsible for the proper technical handling and application of chemical products.","terms_section_2_title":"Product Liability & Compliance","terms_section_3_content":"All industrial operations must comply with local and international environmental protection laws when using our chemical solutions.","terms_section_3_title":"Environmental Regulations","terms_subtitle":"Industrial Terms, Quality Guidelines & Scientific Usage Standards","terms_title":"Terms of Service","vision_description":"To be a trusted regional leader in high-quality chemical solutions, driven by science, sustainability, and customer success.","vision_title":"Our Vision"},"events":[{"id":5,"title":"Research Partnership with Cairo University","image":null,"date":"2026-08-30","time":"15:05 PM"},{"id":4,"title":"International Trade Exhibition","image":null,"date":"2026-08-30","time":"15:05 PM"},{"id":3,"title":"New Product Launch: AcidPro Series","image":null,"date":"2026-08-30","time":"15:05 PM"},{"id":2,"title":"Lab Safety Workshop","image":null,"date":"2026-08-30","time":"15:05 PM"},{"id":1,"title":"Annual Chemistry Conference 2026","image":null,"date":"2026-08-30","time":"15:05 PM"}],"articles":[{"id":5,"title":"Innovations in Industrial Chemical Packaging","image":null,"date":"2026-08-30","time":"15:05 PM"},{"id":4,"title":"What Is High-Purity Chemistry and Why Does It Matter?","image":null,"date":"2026-08-30","time":"15:05 PM"},{"id":3,"title":"Green Chemistry: Toward Sustainable Solutions","image":null,"date":"2026-08-30","time":"15:05 PM"},{"id":2,"title":"Understanding Chemical Safety in the Workplace","image":null,"date":"2026-08-30","time":"15:05 PM"},{"id":1,"title":"The Role of Sulfuric Acid in Modern Industry","image":null,"date":"2026-08-30","time":"15:05 PM"}]}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/events/{event_id}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      event_id:
+        custom: []
+        name: event_id
+        description: 'The ID of the event.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      event_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"success":true,"data":{"id":1,"title":"Annual Chemistry Conference 2026","content":"<p>Join us for the annual chemistry conference where leading scientists present their latest research in organic and inorganic chemistry.<\/p>","image":null,"image_url":null,"date":"2026-08-30","time":"15:05 PM","created_at":"2026-08-30T15:05:40.000000Z","updated_at":"2026-08-30T15:05:40.000000Z"}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/articles/{article_id}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      article_id:
+        custom: []
+        name: article_id
+        description: 'The ID of the article.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      article_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"success":true,"data":{"id":1,"title":"The Role of Sulfuric Acid in Modern Industry","content":"<p>Sulfuric acid is one of the most widely produced chemicals in the world. It plays a critical role in fertilizer production, petroleum refining, wastewater processing, and chemical synthesis.<\/p>","image":null,"image_url":null,"date":"2026-08-30","time":"15:05 PM","created_at":"2026-08-30T15:05:40.000000Z","updated_at":"2026-08-30T15:05:40.000000Z"}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/contact
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        custom: []
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: b
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      email:
+        custom: []
+        name: email
+        description: 'Must be a valid email address. Must not be greater than 255 characters.'
+        required: true
+        example: zbailey@example.net
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      phone:
+        custom: []
+        name: phone
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: i
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      subject:
+        custom: []
+        name: subject
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: 'y'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      msg:
+        custom: []
+        name: msg
+        description: ''
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      name: b
+      email: zbailey@example.net
+      phone: i
+      subject: 'y'
+      msg: architecto
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null

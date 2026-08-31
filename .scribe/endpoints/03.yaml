@@ -1,0 +1,203 @@
+name: Payments
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/v1/payment-methods
+    metadata:
+      custom: []
+      groupName: Payments
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'List available EGP payment methods.'
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"data":[{"code":"paymob","name":{"en":"Card payment","ar":"\u0627\u0644\u062f\u0641\u0639 \u0628\u0627\u0644\u0628\u0637\u0627\u0642\u0629"},"currency":"EGP","requires_online_checkout":true,"enabled":false},{"code":"cash_on_delivery","name":{"en":"Cash on delivery","ar":"\u0627\u0644\u062f\u0641\u0639 \u0639\u0646\u062f \u0627\u0644\u0627\u0633\u062a\u0644\u0627\u0645"},"currency":"EGP","requires_online_checkout":false,"enabled":true}],"message":"Payment methods retrieved successfully.","errors":null}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/v1/payments/paymob/webhook
+    metadata:
+      custom: []
+      groupName: Payments
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Process a Paymob transaction callback.'
+      description: "This endpoint is authenticated using Paymob's callback HMAC."
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      hmac:
+        custom: []
+        name: hmac
+        description: 'Paymob SHA-512 callback signature.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      hmac: architecto
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/v1/payments
+    metadata:
+      custom: []
+      groupName: Payments
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Retry payment for an owned pending order.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_SANCTUM_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      order_reference:
+        custom: []
+        name: order_reference
+        description: 'Reference of an owned pending order. Must not be greater than 100 characters.'
+        required: true
+        example: 10000000-0000-4000-8000-000000000001
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      method:
+        custom: []
+        name: method
+        description: 'Must match the payment method selected at checkout.'
+        required: true
+        example: paymob
+        type: string
+        enumValues:
+          - paymob
+          - cash_on_delivery
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      order_reference: 10000000-0000-4000-8000-000000000001
+      method: paymob
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/v1/payments/{reference}'
+    metadata:
+      custom: []
+      groupName: Payments
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Retrieve an owned payment transaction.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_SANCTUM_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      reference:
+        custom: []
+        name: reference
+        description: ''
+        required: true
+        example: 20000000-0000-4000-8000-000000000001
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      reference: 20000000-0000-4000-8000-000000000001
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"data":null,"message":"Authentication is required.","errors":{"authentication":["A valid access token is required."]}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
